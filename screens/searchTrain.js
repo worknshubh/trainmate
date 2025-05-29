@@ -29,7 +29,7 @@ const Seachtrain = ({navigation}) => {
         method: 'GET',
         headers: {
           'x-rapidapi-key':
-            'b668c93063msh80f07aa94e8e855p156fe9jsnff3f9108835d',
+            YOUR_API_KEY,
           'x-rapidapi-host': 'indian-railway-irctc.p.rapidapi.com',
           'x-rapid-api': 'rapid-api-database',
         },
