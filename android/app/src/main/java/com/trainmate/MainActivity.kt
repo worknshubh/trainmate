@@ -1,4 +1,4 @@
-package com.trainmate
+package com.shubham.trainmate
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

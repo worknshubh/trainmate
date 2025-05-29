@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568610899974",
+    "project_id": "trainmate-6ed17",
+    "storage_bucket": "trainmate-6ed17.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568610899974:android:f7184063cce86865bf5b87",
+        "android_client_info": {
+          "package_name": "com.shubham.trainmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALymJLiEHEuSWE2pGhjq4JZMQfH9b3zds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
