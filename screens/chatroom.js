@@ -21,6 +21,7 @@ import moment from 'moment';
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import Primarybtn from '../components/primarybtn';
+import {pnr_verify_api_key} from '../keys';
 import Toast from 'react-native-toast-message';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
@@ -50,8 +51,7 @@ const Chatroom = ({route, navigation}) => {
         {
           method: 'GET',
           headers: {
-            'x-rapidapi-key':
-              '651bbea1e0mshbca289c9dbeb9d0p100823jsn59768b14f41b',
+            'x-rapidapi-key': {pnr_verify_api_key},
             'x-rapidapi-host': 'irctc-indian-railway-pnr-status.p.rapidapi.com',
           },
         },

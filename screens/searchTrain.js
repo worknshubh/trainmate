@@ -17,7 +17,7 @@ import Traincard from '../components/traincard';
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import moment from 'moment';
-
+import {search_train_api_key} from '../keys';
 const Seachtrain = ({navigation}) => {
   const [trainName, setTrainname] = useState(null);
   const [traindata, setTraindata] = useState([]);
@@ -28,8 +28,7 @@ const Seachtrain = ({navigation}) => {
       {
         method: 'GET',
         headers: {
-          'x-rapidapi-key':
-            'f8b9231db9msh4c3d4da2c4b5958p1ff745jsnb6fa63231122',
+          'x-rapidapi-key': {search_train_api_key},
           'x-rapidapi-host': 'indian-railway-irctc.p.rapidapi.com',
           'x-rapid-api': 'rapid-api-database',
         },
