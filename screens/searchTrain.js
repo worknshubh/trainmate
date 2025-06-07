@@ -29,7 +29,7 @@ const Seachtrain = ({navigation}) => {
         method: 'GET',
         headers: {
           'x-rapidapi-key':
-            'b668c93063msh80f07aa94e8e855p156fe9jsnff3f9108835d',
+            'f8b9231db9msh4c3d4da2c4b5958p1ff745jsnb6fa63231122',
           'x-rapidapi-host': 'indian-railway-irctc.p.rapidapi.com',
           'x-rapid-api': 'rapid-api-database',
         },
@@ -154,14 +154,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   navbar: {
-    borderBottomWidth: 2,
+    borderBottomWidth: 1,
+    borderColor: '#969693',
   },
   logo: {
     color: '#2E8B57',
     fontSize: 30,
     marginLeft: hp('7%'),
-    fontWeight: 'bold',
-    fontFamily: 'poppins',
+    // fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
     // borderWidth:2
     marginBottom: 8,
   },
@@ -175,6 +176,7 @@ const styles = StyleSheet.create({
   inputfield: {
     color: '#FCB454',
     fontSize: 20,
+    fontFamily: 'Poppins-Regular',
   },
   seachiconbox: {
     backgroundColor: '#2E8B57',

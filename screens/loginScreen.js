@@ -47,7 +47,7 @@ const Loginscreen = ({navigation}) => {
         user.reload();
         navigation.reset({
           index: 0,
-          routes: [{name: 'searchTrain'}],
+          routes: [{name: 'MainTab'}],
         });
         Toast.show({
           type: 'success',
@@ -108,10 +108,22 @@ const Loginscreen = ({navigation}) => {
           marginLeft: 30,
         }}>
         <Pressable onPress={redirecttoSignup} style={{flexDirection: 'row'}}>
-          <Text style={{fontSize: 18, color: '#FCB454'}}>
+          <Text
+            style={{
+              fontSize: 18,
+              color: '#FCB454',
+              fontFamily: 'Poppins-SemiBold',
+            }}>
             Don't have an account?
           </Text>
-          <Text style={{fontSize: 18, color: '#2E8B57'}}> Sign up</Text>
+          <Text
+            style={{
+              fontSize: 18,
+              color: '#2E8B57',
+              fontFamily: 'Poppins-SemiBold',
+            }}>
+            Sign up
+          </Text>
         </Pressable>
       </View>
 
@@ -139,6 +151,7 @@ const styles = StyleSheet.create({
     color: '#2E8B57',
     fontSize: 37,
     fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
   },
   loginlogobox: {
     // borderWidth: 2,
@@ -159,6 +172,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#FCB454',
     marginBottom: 40,
+    fontFamily: 'Poppins-Regular',
   },
 });
 

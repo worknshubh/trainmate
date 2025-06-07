@@ -12,6 +12,8 @@ import {
 } from 'react-native-responsive-screen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Maintab from './screens/maintabs';
+import Profile from './screens/profile';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,14 +33,22 @@ const App = () => {
           name="signUpScreen"
           component={Signupscreen}
           options={{headerShown: false}}></Stack.Screen>
-        <Stack.Screen
+        {/* <Stack.Screen
           name="searchTrain"
           component={Seachtrain}
-          options={{headerShown: false}}></Stack.Screen>
+          options={{headerShown: false}}></Stack.Screen> */}
         <Stack.Screen
           name="chatRoom"
           component={Chatroom}
           options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen
+          name="MainTab"
+          component={Maintab}
+          options={{headerShown: false}}></Stack.Screen>
+        {/* <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{headerShown: false}}></Stack.Screen> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

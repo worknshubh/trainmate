@@ -19,8 +19,15 @@ const Chat = props => {
         <Text style={{fontWeight: 'bold', marginVertical: 4}}>
           {props.messages.username}
         </Text>
-        <Text style={{fontSize: 18}}>{props.messages.usermessage}</Text>
-        <Text style={{alignSelf: 'flex-end', marginVertical: 4}}>
+        <Text style={{fontSize: 18, fontFamily: 'Poppins-Regular'}}>
+          {props.messages.usermessage}
+        </Text>
+        <Text
+          style={{
+            alignSelf: 'flex-end',
+            marginVertical: 4,
+            fontFamily: 'Poppins-Light',
+          }}>
           {props.messages.time}
         </Text>
       </View>

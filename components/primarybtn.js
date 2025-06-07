@@ -34,6 +34,7 @@ const Primarybtn = props => {
             color: '#2E8B57',
             textAlign: 'center',
             textAlignVertical: 'center',
+            fontFamily: 'Poppins-Light',
             //   borderWidth: 2,
           }}>
           {props.name}

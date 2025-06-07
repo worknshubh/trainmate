@@ -22,7 +22,7 @@ const Getstarted = ({navigation}) => {
       if (user.emailVerified) {
         navigation.reset({
           index: 0,
-          routes: [{name: 'searchTrain'}],
+          routes: [{name: 'MainTab'}],
         });
       } else {
         navigation.reset({
@@ -40,7 +40,12 @@ const Getstarted = ({navigation}) => {
         <Image
           source={require('../assets/images/getstarted.png')}
           style={{width: wp('68%'), height: hp('35%')}}></Image>
-        <Text style={{color: '#2E8B57', fontSize: 34, fontWeight: 'bold'}}>
+        <Text
+          style={{
+            color: '#2E8B57',
+            fontSize: 34,
+            fontFamily: 'Poppins-SemiBold',
+          }}>
           Train Mate
         </Text>
       </View>
@@ -82,6 +87,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#FCB454',
     textAlign: 'center',
+    fontFamily: 'Poppins-Regular',
   },
 });
 export default Getstarted;

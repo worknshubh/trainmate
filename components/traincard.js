@@ -15,7 +15,7 @@ import {
 const Traincard = props => {
   return (
     <View style={styles.cardmaiinarea}>
-      <Pressable onPress={props.redirect}>
+      <Pressable onPress={props.redirect} android_ripple={{color: '#FF9B17'}}>
         <View
           style={{
             flexDirection: 'row',
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     borderRadius: 15,
     elevation: 3,
+    fontFamily: 'Poppins-Regular',
   },
   cardmainareatext: {
     fontSize: hp('2%'),
